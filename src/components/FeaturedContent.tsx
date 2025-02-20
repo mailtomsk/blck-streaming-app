@@ -9,7 +9,7 @@ export const FeaturedContent = () => (
       className="w-full h-full object-cover"
     />
     <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
-    <div className="absolute bottom-32 left-4 sm:left-16 max-w-2xl px-4 sm:px-0 lg:bottom-1/5 md:bottom-1/5 sm:bottom-[0px]">
+    <div className="absolute left-4 sm:left-16 max-w-2xl px-4 sm:px-0 bottom-0 sm:bottom-32 md:bottom-64 lg:bottom-64">
       <h1 className="text-4xl sm:text-6xl font-bold text-white mb-4">
         Inception
       </h1>
