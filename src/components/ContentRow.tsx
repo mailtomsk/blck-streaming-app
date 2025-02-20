@@ -17,14 +17,14 @@ export const ContentRow = ({ title, items }: ContentRowProps) => {
           <h2 className="text-2xl font-bold text-white mb-4">{title}</h2>
           <div className="flex gap-4 overflow-x-scroll scrollbar-hide pb-4 scroll-smooth justify-center">
           {items.map((item, index) => (
-            <div key={index} className="flex-none w-[260px] relative group first:ml-auto last:mr-auto">
+            <div key={index} className="flex-none w-[260px] relative first:ml-auto last:mr-auto">
               <img
                 onClick={() => setSelectedMovie(item)}
                 src={`https://images.unsplash.com/photo-${item}?auto=format&fit=crop&w=800&q=80`}
                 alt={`Movie ${index + 1}`}
-                className="w-full h-[146px] object-cover rounded-md transition transform group-hover:scale-105 cursor-pointer"
+                className="w-full h-[146px] object-cover rounded-md transition transform hover:scale-105 cursor-pointer"
               />
-              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all rounded-md flex items-center justify-center opacity-0 group-hover:opacity-100">
+              <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-50 transition-all rounded-md flex items-center justify-center opacity-0 hover:opacity-100">
                 <div className="flex flex-col items-center gap-4">
                   <Play
                     onClick={() => setSelectedMovie(item)}
